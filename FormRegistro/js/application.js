@@ -75,6 +75,38 @@ function validarForm(e) {
 			$('#txtDni').removeClass('is-invalid').addClass('is-valid');
 		}
 
+		//Datos de domicilio - DGN
+		if (document.getElementById('txtCalle').value == "") {
+			$('#txtCalle').addClass('is-invalid');
+			error = true;
+		} else {
+			percent += 10;
+			$('#txtCalle').removeClass('is-invalid').addClass('is-valid');
+		}
+		
+		if (document.getElementById('txtAltura').value == ""
+			|| !Number(document.getElementById('txtAltura').value)) {
+			$('#txtAltura').addClass('is-invalid');
+			error = true;
+		} else {
+			percent += 10;
+			$('#txtAltura').removeClass('is-invalid').addClass('is-valid');
+		}
+		
+		if (document.getElementById('txtPiso').value == ""
+			|| !Number(document.getElementById('txtPiso').value)) {
+			$('#txtPiso').addClass('is-invalid');
+			error = true;
+		} else {
+			percent += 10;
+			$('#txtPiso').removeClass('is-invalid').addClass('is-valid');
+		}
+				
+		// fin-DGN
+		if ($('#cmbProvincia').val() == "") {
+			$('#cmbProvincia').addClass('is-invalid');
+
+
 		if (document.getElementById('numTramite').value == "") {
 			$('#numTramite').addClass('is-invalid');
 			error = true;
@@ -85,6 +117,7 @@ function validarForm(e) {
 
 		if ($('#cmbNacionalidad , #cbmGenero, #cmbTipoDoc').val() == "") {
 			$('#cmbNacionalidad , #cbmGenero, #cmbTipoDoc').addClass('is-invalid');
+
 			error = true;
 		} else {
 			percent += 10;
