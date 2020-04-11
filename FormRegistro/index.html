@@ -13,6 +13,17 @@
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <a class="navbar-brand text-white" href="#">Formulario de Registro.</a>
+</nav>
+<div class="progress">
+	<div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-8">
+      <form name="registro" onsubmit="return validarForm(event);">
+ 
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <a class="navbar-brand text-white" href="#">Formulario de Registro</a>
     </nav>
@@ -129,14 +140,7 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="chkTerms">
-                                        <label class="form-check-label" for="chkTerms">
-                                            Aceptar <a href="javascript:void();" data-toggle="modal" data-target="#exampleModal">Terminos y Condiciones</a>
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary mt-3">Enviar Registro</button>
+                            
                                 </div>
                             </div>
                         </div>
@@ -228,14 +232,73 @@
                                 </div>
                             </div>
                         </div>
+<div id="accordion">
+			<div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  Datos de contacto
+					</button>
+				  </h5>
+				</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				  <div class="card-body">
 
+			<div class="row">
+				<div class="col-8">
+					<div class="form-group">
+						<label for="txtphone">Celular</label>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">
+									<i class="fas fa-phone text-primary"></i>
+								</span>
+							  </div>
+							<input type="text" class="form-control" id="txtphone" placeholder="Número de Celular"required>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-8">
+					<div class="form-group">
+						<label for="txtEmail">E-Mail </label>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+			
+								<span class="input-group-text" id="basic-addon1">
+									<i class="fas fa-at text-primary"></i>
+								</span>
+							  </div>
+							<input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su Correo Electronico"required>
+						</div>
+					  </div>
+					</div>
+		
+					  <div class="form-group">
+						<label for="txtgithub">GitHub </label>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+			
+								<span class="input-group-text" id="basic-addon1">
+									<i class="fab fa-github"></i>
+								</span>
+							  </div>
+							<input type="email" class="form-control" id="txtgithub" placeholder="Ingrese su Usuario GitHub"required>
+						</div>
+					  </div>
+					</div>
+	
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
                 </form>
                 </div>
-                <div class="col bg-dark text-light">
-                    <div class="text-warning">
-                        <p id="helpInfo">Informaci&oacute;n adicional</p>
-                    </div>
-                </div>
+     
             </div>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
