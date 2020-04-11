@@ -13,19 +13,8 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-  <a class="navbar-brand text-white" href="#">Formulario de Registro.</a>
-</nav>
-<div class="progress">
-	<div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-<div class="container mt-3">
-  <div class="row">
-    <div class="col-8">
-      <form name="registro" onsubmit="return validarForm(event);">
- 
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand text-white" href="#">Formulario de Registro</a>
+        <a class="navbar-brand text-white" href="#">Formulario de Registro.</a>
     </nav>
     <div class="progress">
         <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -34,6 +23,9 @@
         <div class="row">
             <div class="col-8">
                 <form name="registro" onsubmit="return validarForm(event);">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
                     <div id="accordion">
                         <div class="card">
@@ -140,7 +132,7 @@
                                             </div>
                                         </div>
                                     </div>
-                            
+
                                 </div>
                             </div>
                         </div>
@@ -163,7 +155,7 @@
 
                                         <div class="row">
 
-                                            <div class="col-4">
+                                            <div class="col-8">
 
                                                 <div class="form-group">
                                                     <label for="txtCalle">Calle</label>
@@ -178,7 +170,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-8">
                                                 <div class="form-group">
                                                     <label for="txtAltura">Altura</label>
                                                     <div class="input-group mb-3">
@@ -191,7 +183,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-8">
                                                 <div class="form-group">
                                                     <label for="txtPiso">Piso/Depto</label>
                                                     <div class="input-group mb-3">
@@ -232,240 +224,241 @@
                                 </div>
                             </div>
                         </div>
-<div id="accordion">
-			<div class="card">
-				<div class="card-header" id="headingThree">
-				  <h5 class="mb-0">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
 					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 					  Datos de contacto
 					</button>
 				  </h5>
-				</div>
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-				  <div class="card-body">
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
 
-			<div class="row">
-				<div class="col-8">
-					<div class="form-group">
-						<label for="txtphone">Celular</label>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="basic-addon1">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="form-group">
+                                                    <label for="txtphone">Celular</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-phone text-primary"></i>
 								</span>
-							  </div>
-							<input type="text" class="form-control" id="txtphone" placeholder="Número de Celular"required>
-						</div>
-					  </div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-8">
-					<div class="form-group">
-						<label for="txtEmail">E-Mail </label>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-			
-								<span class="input-group-text" id="basic-addon1">
+                                                        </div>
+                                                        <input type="text" class="form-control" id="txtphone" placeholder="Número de Celular" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="form-group">
+                                                    <label for="txtEmail">E-Mail </label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+
+                                                            <span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-at text-primary"></i>
 								</span>
-							  </div>
-							<input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su Correo Electronico"required>
-						</div>
-					  </div>
-					</div>
-		
-					  <div class="form-group">
-						<label for="txtgithub">GitHub </label>
-						<div class="input-group mb-3">
-							<div class="input-group-prepend">
-			
-								<span class="input-group-text" id="basic-addon1">
+                                                        </div>
+                                                        <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su Correo Electronico" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="txtgithub">GitHub </label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+
+                                                        <span class="input-group-text" id="basic-addon1">
 									<i class="fab fa-github"></i>
 								</span>
-							  </div>
-							<input type="email" class="form-control" id="txtgithub" placeholder="Ingrese su Usuario GitHub"required>
-						</div>
-					  </div>
-					</div>
-	
-	</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-              <div id="accordion">
-			<div class="card">
-				<div class="card-header" id="headingFour">
-				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					 <u> Datos de contacto</u>
-					</button>
-				  </h5>
-				</div>
-			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-				  <div class="card-body">
-		
-	  <div class= "seccion">	
+                                                    </div>
+                                                    <input type="email" class="form-control" id="txtgithub" placeholder="Ingrese su Usuario GitHub" required>
+                                                </div>
+                                            </div>
+                                        </div>
 
-			  <div class="form-group">
-				<label>Lugar de trabajo </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-home text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese su lugar de trabajo" required>
-				</div>
-			  </div>
-			  <!-- calle y altura -->
-			  <div class="row">
-				<div class="col-6">
-			  <div class="form-group">
-				<label>Calle </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-map text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese la calle donde se ubica su trabajo">
-				</div>
-			  </div>
-				</div>
-				<div class="col-6">
-			  <div class="form-group">
-				<label>Altura </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-map text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese altura" required>
-				</div>
-			  </div>
-			</div>
-			</div>
-			  <!--calle y altura-->
-			  
-			  <div class="row">
-				<div class="col-6">
-
-
-			  <div class="form-group">
-				<label>Piso/Depto </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-map text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese el piso o depto" required>
-				</div>
-			  </div>
-			  </div>
-
-			  <div class="col-6">
-			  <div class="form-group">
-				<label>Provincia </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-map text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese provincia" required>
-				</div>
-			  </div>
-			  </div>
-			  </div>
-			  <div class="form-group">
-				<label>Ciudad </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-map text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese la ciudad" required>
-				</div>
-			  </div>
-
-			  <div class="form-group">
-				<label>Telefono laboral </label>
-				<div class="input-group mb-3">
-					<div class="input-group-prepend">
-	
-						<span class="input-group-text" id="basic-addon1">
-							<i class="fas fa-phone text-primary"></i>
-						</span>
-					  </div>
-					<input  class="form-control" placeholder="Ingrese telefono laboral" required>
-				</div>
-			  </div>
-
-			  <div class="form-group" style="display:none" name="checkbox">
-				<label>¿Es profesional de salud? </label>
-				<div class="col-6">
-					<input type="radio" id="select_si" name="opcion" value="si" required>
-  					<label for="si">Si</label><br>
- 					<input type="radio" id="select_no" name="opcion" value="no">
-  					<label for="no">No</label><br>					
-				</div>
-
-			  </div>
-			
-		</div>
-	</div>
-	
-</div>
-</div>
-		</div>
-              
-              <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="chkTerms">
-              <label class="form-check-label" for="chkTerms">
-                Aceptar <a href="javascript:void();" data-toggle="modal" data-target="#exampleModal">Terminos y Condiciones</a>
-              </label>
-            </div>
-
-          <button type="submit" class="btn btn-primary mt-3">Enviar Registro</button>
-              
-              
-              
-                </form>
-                </div>
-     
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Terminos y condiciones</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            El usuario (en adelante el “Usuario y/o Ciudadano”) entiende que el acceso y uso de tales Activos Digitales resultará en la aceptación de los presentes Términos y Condiciones. Asimismo, el Usuario entiende que acepta la Política de Privacidad, anexo a los presentes Términos y Condiciones. Capacidad para aceptar estos Términos y Condiciones Usted afirma ser mayor de 18 años, menor emancipado o que posee permiso legal de sus padres y/o tutor y que está completamente habilitado y es competente para entender y aceptar sin reservas las obligaciones, afirmaciones, representaciones y garantías establecidas en estos Términos y Condiciones. Los Activos Digitales utilizan información provista directamente por los Usuarios, información suministrada por terceros e información cedida a la Subsecretaría de Gobierno Digital por otros Organismos en los términos de lo dispuesto por la Ley de Protección de Datos Personales, Nº Ley 25.326. En este último caso, la Subsecretaría de Gobierno Digital no es responsable por daños y/o perjuicios que pudieran generarse por errores en la información cedida por dichos Organismos. Derecho Aplicable y Jurisdicción Los presentes Términos y Condiciones se rigen por las leyes de la República Argentina. En caso de surgir cualquier controversia respecto de la interpretación o cumplimiento de los presentes, la misma será dirimida por los Tribunales en lo Contencioso Administrativo Federal con asiento en la Capital Federal.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 <u> Datos Laborales</u>
+                </button>
+                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+
+                                    <div class="seccion">
+
+                                        <div class="form-group">
+                                            <label>Lugar de trabajo </label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+
+                                                    <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-home text-primary"></i>
+                  </span>
+                                                </div>
+                                                <input class="form-control" placeholder="Ingrese su lugar de trabajo" required>
+                                            </div>
+                                        </div>
+                                        <!-- calle y altura -->
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Calle </label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+
+                                                            <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-map text-primary"></i>
+                  </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Ingrese la calle donde se ubica su trabajo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Altura </label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+
+                                                            <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-map text-primary"></i>
+                  </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Ingrese altura" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--calle y altura-->
+
+                                        <div class="row">
+                                            <div class="col-6">
+
+                                                <div class="form-group">
+                                                    <label>Piso/Depto </label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+
+                                                            <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-map text-primary"></i>
+                  </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Ingrese el piso o depto" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label>Provincia </label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+
+                                                            <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-map text-primary"></i>
+                  </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Ingrese provincia" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Ciudad </label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+
+                                                    <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-map text-primary"></i>
+                  </span>
+                                                </div>
+                                                <input class="form-control" placeholder="Ingrese la ciudad" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Telefono laboral </label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+
+                                                    <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-phone text-primary"></i>
+                  </span>
+                                                </div>
+                                                <input class="form-control" placeholder="Ingrese telefono laboral" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group" style="display:none" name="checkbox">
+                                            <label>¿Es profesional de salud? </label>
+                                            <div class="col-8">
+                                                <input type="radio" id="select_si" name="opcion" value="si" required>
+                                                <label for="si">Si</label>
+                                                <br>
+                                                <input type="radio" id="select_no" name="opcion" value="no">
+                                                <label for="no">No</label>
+                                                <br>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="chkTerms">
+                        <label class="form-check-label" for="chkTerms">
+                            Aceptar <a href="javascript:void();" data-toggle="modal" data-target="#exampleModal">Terminos y Condiciones</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Enviar Registro</button>
+
+            </div>
+
+            </form>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terminos y condiciones</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    El usuario (en adelante el “Usuario y/o Ciudadano”) entiende que el acceso y uso de tales Activos Digitales resultará en la aceptación de los presentes Términos y Condiciones. Asimismo, el Usuario entiende que acepta la Política de Privacidad, anexo a los presentes Términos y Condiciones. Capacidad para aceptar estos Términos y Condiciones Usted afirma ser mayor de 18 años, menor emancipado o que posee permiso legal de sus padres y/o tutor y que está completamente habilitado y es competente para entender y aceptar sin reservas las obligaciones, afirmaciones, representaciones y garantías establecidas en estos Términos y Condiciones. Los Activos Digitales utilizan información provista directamente por los Usuarios, información suministrada por terceros e información cedida a la Subsecretaría de Gobierno Digital por otros Organismos en los términos de lo dispuesto por la Ley de Protección de Datos Personales, Nº Ley 25.326. En este último caso, la Subsecretaría de Gobierno Digital no es responsable por daños y/o perjuicios que pudieran generarse por errores en la información cedida por dichos Organismos. Derecho Aplicable y Jurisdicción Los presentes Términos y Condiciones se rigen por las leyes de la República Argentina. En caso de surgir cualquier controversia respecto de la interpretación o cumplimiento de los presentes, la misma será dirimida por los Tribunales en lo Contencioso Administrativo Federal con asiento en la Capital Federal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 <script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
